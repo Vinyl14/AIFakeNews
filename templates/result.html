@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <!-- <h1>Text Prediction Result</h1> -->
+    <nav class="navbar">
+        <a href="/">Verichecked</a>
+       </nav> 
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <img src="/static/logo-removebg 1.png" alt="logonihbos">
+       <br>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <br>
+        <p class="enter">Entered text: {{ text }}</p>
+        <br>
+    {% else %}
+        <p>No prediction available.</p>
+    {% endif %}
+    
+    <a class="balik" href="/">Go back to prediction</a>
+
+    <br>
+    <footer>
+    
+        <div class="daleman">
+            <div style="text-align: left; width: fit-content;">
+                <p style="font-size: 40px;">VERICHECKED</p>
+                <br>
+                <p>Untuk mengatasi misinformasi,<br> kami membayangkan lanskap digital <br>di mana kebenaran akan menang. <br>Tujuan kami adalah untuk memberdayakan <br>pengguna dengan informasi yang akurat, <br>membina masyarakat yang mahir membedakan fakta dari fiksi.</p>
+            <br>
+            </div>
+        
+            <div style="text-align: right;">
+                <p>Contact Us</p>
+                <br>
+                <p>Jln. Kelapa Sari No.1<br> Jakarta Timur, Indonesia</p>
+                <p>Email: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a><br> Phone: 0811563554</p>
+            </div>
+        
+    
+        <div class="credits">
+                <p><a href="#">Verichecked</a>. | &copy; 2023.</p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

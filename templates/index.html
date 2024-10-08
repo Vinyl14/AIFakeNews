@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Prediction App</title>
+    <link rel="icon" type="images/x-icon" href="/static/logo-removebg 1.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+   <nav class="navbar">
+    <a href="/">Verichecked</a>
+   </nav> 
+    <!-- <h1>Text Prediction</h1> -->
+    <br>
+    <img src="/static/logo-removebg 1.png" alt="logonihbos">
+    <br>
+    <form action="/predict" method="post">
+        <input class="masuk" type="text" id="text" name="text" placeholder="Verifikasikan Berita Anda Disini..." required>
+        <button class="kumpul" type="submit"><img src="/static/magnifyingglass.png" alt="Predict"></button>
+    </form>
+    
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <p>Entered text: {{ text }}</p>
+    {% endif %}
+
+    <br>
+    <footer>
+    
+        <div class="daleman">
+            <div style="text-align: left; width: fit-content;">
+                <p style="font-size: 40px;">VERICHECKED</p>
+                <br>
+                <p>Untuk mengatasi misinformasi,<br> kami membayangkan lanskap digital <br>di mana kebenaran akan menang. <br>Tujuan kami adalah untuk memberdayakan <br>pengguna dengan informasi yang akurat, <br>membina masyarakat yang mahir membedakan fakta dari fiksi.</p>
+            <br>
+            </div>
+        
+            <div style="text-align: right;">
+                <p>Contact Us</p>
+                <br>
+                <p>Jln. Kelapa Sari No.1<br> Jakarta Timur, Indonesia</p>
+                <p>Email: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a><br> Phone: 0811563554</p>
+            </div>
+        
+    
+        <div class="credits">
+                <p><a href="#">Verichecked</a>. | &copy; 2023.</p>
+        </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+
+</html>
